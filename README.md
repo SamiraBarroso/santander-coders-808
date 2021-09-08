@@ -1,2 +1,6 @@
-# santander-coders-808
-Santander Coders | Web Full-Stack
+
+# :computer: Santander Coders | Web Full-Stack | Turma 808
+Códigos desenvolvidos durante o curso de **Desenvolvimento Web Full Stack Java** ministrado pela **Let's Code**.
+
+## :orange_book: Módulos
+- #### [Módulo 1: Web Front-End Estática](/MODULO_01)
