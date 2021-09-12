@@ -1,4 +1,4 @@
-# Exercício 1
+# Atividade 1
 
 ## Requisitos
 
