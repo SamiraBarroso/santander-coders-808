@@ -31,6 +31,8 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   --scroll-icon-color: var(--color-white);
 
+  --first-color-darker-alpha: 14, 16, 27;
+
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
@@ -87,6 +89,8 @@ body.dark-theme {
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
   --scroll-icon-color: hsl(var(--hue-color), 30%, 8%);
+
+  --first-color-darker-alpha: 255, 255, 255;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -182,7 +186,7 @@ main {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
+  max-width: 968px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -320,9 +324,14 @@ main {
 }
 
 /*==================== CONTENT ====================*/
+
 .clothes__container {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+}
+
+.aside__container {
+  display: none;
 }
 
 .clothes__name,
@@ -361,7 +370,6 @@ main {
 
 .img__container {
   position: relative;
-  cursor: pointer;
 }
 
 .img__heart-icon {
@@ -393,8 +401,17 @@ main {
   transform: scale(0);
 }
 
-.img__container:hover > .img__heart-icon,
-.img__container:hover > .img__bag-icon {
+.cloth,
+.clothes__name {
+  cursor: pointer;
+}
+
+.cloth:hover .clothes__name {
+  color: var(--first-color);
+}
+
+.cloth:hover .img__heart-icon,
+.cloth:hover .img__bag-icon {
   visibility: visible;
   transform: scale(1);
   transition: 0.5s;
@@ -758,12 +775,94 @@ main {
     padding: 0;
   }
 
+  .content {
+    display: flex;
+  }
+
+  .aside__container {
+    display: flex;
+    width: 100%;
+    padding: 15rem 3rem 0 10%;
+    flex-direction: column;
+    max-width: 500px;
+    visibility: visible;
+    font-size: var(--small-font-size);
+  }
+
+  .aside__container h3 {
+    font-size: var(--h3-font-size);
+  }
+
+  .aside__container > form > div {
+    padding: var(--mb-1-5) 0;
+    box-shadow: 0px 1px 0px 0px rgba(var(--first-color-darker-alpha), 0.15);
+  }
+
+  .price__inputs {
+    display: grid;
+    grid-template-columns: 90px 25% 90px;
+    margin-top: 1rem;
+  }
+
+  .price__inputs > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price__input {
+    width: 90px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    box-shadow: 0px 1px 0px 0px rgba(var(--first-color-darker-alpha), 0.15);
+    background-color: transparent;
+  }
+
+  .price__inputs-line {
+    background-color: var(--text-color);
+    height: 3px;
+    transform: translateY(25px);
+    margin: 0 15px;
+  }
+
+  .price__label {
+    color: var(--text-color);
+    font-size: var(--smaller-font-size);
+  }
+
+  .size-checks__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+  }
+
+  .brand-checks__container {
+    margin-top: 1rem;
+  }
+
+  .brand-checks__container > div {
+    margin-bottom: var(--mb-0-25);
+  }
+
+  .style-radios__container {
+    margin-top: 1rem;
+  }
+
+  .title__container {
+    transform: translateX(-10%);
+  }
+
+  main {
+    margin-left: 10%;
+  }
+
   .footer__title {
     line-height: 2rem;
   }
 }
 
-@media screen and (max-width: 1124px) {
+@media screen and (max-width: 1024px) {
   .title__container {
     margin-left: var(--mb-3);
   }
