@@ -406,8 +406,8 @@ main {
   font-size: 0.85rem;
   background-color: var(--color-red);
   padding: 0 5px;
-  border-radius: 0 10% 10% 0;
   color: hsl(var(--hue-color), 8%, 95%);
+  box-shadow: 4px -1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*==================== FOOTER ====================*/
