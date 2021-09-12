@@ -46,7 +46,7 @@ if (searchButton) {
     searchContainer.classList.toggle("active");
 
     if (window.innerWidth <= 768) {
-      navLogo.classList.toggle("hide__link");
+      navLogo.classList.toggle("hide__logo");
     }
   });
 }
