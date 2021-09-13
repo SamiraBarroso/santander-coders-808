@@ -1,6 +1,6 @@
 # Atividade 1
 
-## Requisitos
+## :pencil: Requisitos
 
 Segue abaixo o enunciado da Atividade 1 para ser entregue até segunda-feira, dia 13/09:
 
@@ -15,3 +15,6 @@ EXTRA (200XP)
 
 - Utilizar tags semânticas da forma correta;
 - Sejam criativos!
+
+## :computer: Deploy
+- [Vessel app](https://santander-coders-808.vercel.app/)
