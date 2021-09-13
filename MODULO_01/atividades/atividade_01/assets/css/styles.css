@@ -164,6 +164,13 @@ main {
   margin-right: auto;
 }
 
+table,
+th,
+td {
+  border: 1px solid rgba(var(--first-color-darker-alpha), 0.15);
+  border-collapse: collapse;
+}
+
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
@@ -402,7 +409,8 @@ main {
 }
 
 .cloth,
-.clothes__name {
+.clothes__name,
+.clothes__price {
   cursor: pointer;
 }
 
@@ -837,16 +845,26 @@ main {
     margin-top: 1rem;
   }
 
-  .brand-checks__container {
-    margin-top: 1rem;
-  }
-
-  .brand-checks__container > div {
+  .brand-checks__container > div,
+  .style-radios__container > div,
+  .best-ol__container li {
     margin-bottom: var(--mb-0-25);
   }
 
-  .style-radios__container {
+  .size-checks__container,
+  .brand-checks__container,
+  .style-radios__container,
+  .best-ol__container,
+  .table__container > table {
     margin-top: 1rem;
+  }
+
+  .best-ol__container {
+    margin-left: var(--mb-1);
+  }
+
+  .table__container > table {
+    width: 100%;
   }
 
   .title__container {
