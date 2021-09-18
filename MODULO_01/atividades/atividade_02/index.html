@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!--==================== BOOTSTRAP ====================-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Atividade 2 | Vessel</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header container" id="header">
+    <nav class="nav d-flex flex-row align-items-center justify-content-between">
+      <a href="#" class="nav__logo">Vessel</a>
+
+      <i class="uil uil-bars nav__open d-md-none order-first" id="nav-open"></i>
+
+      <div class="nav__menu d-none d-md-block" id="nav-menu">
+        <ul class="nav__list d-flex">
+          <li class="nav__item">
+            <a href="#tshirts" class="nav__link active-link">
+              T-shirts
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#pants" class="nav__link">
+              Pants
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#shorts" class="nav__link">
+              Shorts
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#coats" class="nav__link">
+              Coats
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close d-md-none" id="nav-close"></i>
+      </div>
+
+      <div class="nav__btns">
+        <i class="uil uil-search nav__icons" id="search-button"></i>
+        <i class="uil uil-moon nav__icons" id="theme-button"></i>
+        <i class="uil uil-heart heart nav__icons"></i>
+        <i class="uil uil-shopping-bag bag nav__icons"></i>
+        <i class="uil uil-user user nav__icons"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="tshirts section container" id="tshirts">
+      <div class="title__container pt-5 d-flex flex-column align-items-start">
+        <h2 class="section__title">T-shirts</h2>
+        <span class="section__subtitle">Basic t-shits to you</span>
+      </div>
+      <div class="clothes__container row gap-3 justify-content-evenly">
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1613852348851-df1739db8201?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="T-shirt">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic t-shirt</label>
+            <label class="clothes__price"><b>$35</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="T-shirt">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic t-shirt</label>
+            <label class="clothes__price"><b>$35</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-3 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <span class="discount-badge"><strong>15% OFF</strong></span>
+            <img
+              src="https://images.unsplash.com/photo-1608202602184-17c1daa0dd63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=629&q=80"
+              alt="T-shirt">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic t-shirt</label>
+            <label class="clothes__price"><b>$35</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-3 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1554568218-0f1715e72254?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="T-shirt">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic t-shirt</label>
+            <label class="clothes__price"><b>$35</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-3 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <span class="discount-badge"><strong>45% OFF</strong></span>
+            <img
+              src="https://images.unsplash.com/photo-1551799517-eb8f03cb5e6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+              alt="T-shirt">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic t-shirt</label>
+            <label class="clothes__price"><b>$35</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-3 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1519330377309-9ee1c6783348?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="T-shirt">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic t-shirt</label>
+            <label class="clothes__price"><b>$35</b></label>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pants section container" id="pants">
+      <div class="title__container d-flex flex-column align-items-start">
+        <h2 class="section__title">Pants</h2>
+        <span class="section__subtitle">Basic pants to you</span>
+      </div>
+      <div class="clothes__container row gap-3 justify-content-evenly">
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <span class="discount-badge"><strong>25% OFF</strong></span>
+            <img
+              src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBhbnRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Pant">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic pant</label>
+            <label class="clothes__price"><b>$50</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1555689502-c4b22d76c56f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGFudHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Pant">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic pant</label>
+            <label class="clothes__price"><b>$50</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1584865288642-42078afe6942?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGFudHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Pant">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic pant</label>
+            <label class="clothes__price"><b>$50</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFudHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Pant">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic pant</label>
+            <label class="clothes__price"><b>$50</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1517445312882-bc9910d016b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBhbnRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Pant">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic pant</label>
+            <label class="clothes__price"><b>$50</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <span class="discount-badge"><strong>15% OFF</strong></span>
+            <img
+              src="https://images.unsplash.com/photo-1570653321586-3bb42aaee967?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHBhbnRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Pant">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic pant</label>
+            <label class="clothes__price"><b>$50</b></label>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="shorts section container" id="shorts">
+      <div class="title__container d-flex flex-column align-items-start">
+        <h2 class="section__title">Shorts</h2>
+        <span class="section__subtitle">Basic shorts to you</span>
+      </div>
+      <div class="clothes__container row gap-3 justify-content-evenly">
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1563643021-fc79b9e02867?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Short">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic short</label>
+            <label class="clothes__price"><b>$40</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1593263049629-a6bbe863049f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Short">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic short</label>
+            <label class="clothes__price"><b>$40</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1602132664379-dd392de2854e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Short">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic short</label>
+            <label class="clothes__price"><b>$40</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <span class="discount-badge"><strong>15% OFF</strong></span>
+            <img
+              src="https://images.unsplash.com/photo-1600884445699-85e50f61f8be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Short">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic short</label>
+            <label class="clothes__price"><b>$40</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <span class="discount-badge"><strong>25% OFF</strong></span>
+            <img
+              src="https://images.unsplash.com/photo-1616188419493-c50b2a825972?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Short">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic short</label>
+            <label class="clothes__price"><b>$40</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <span class="discount-badge"><strong>35% OFF</strong></span>
+            <img
+              src="https://images.unsplash.com/photo-1592943682801-647fe0a79151?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Short">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic short</label>
+            <label class="clothes__price"><b>$40</b></label>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="coats section container" id="coats">
+      <div class="title__container d-flex flex-column align-items-start">
+        <h2 class="section__title">Coats</h2>
+        <span class="section__subtitle">Basic coats to you</span>
+      </div>
+      <div class="clothes__container row gap-3 justify-content-evenly">
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <span class="discount-badge"><strong>35% OFF</strong></span>
+            <img
+              src="https://images.unsplash.com/photo-1602443276032-3dfd0f669041?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=641&q=80"
+              alt="Coat">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic coat</label>
+            <label class="clothes__price"><b>$55</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <span class="discount-badge"><strong>25% OFF</strong></span>
+            <img
+              src="https://images.unsplash.com/photo-1554526735-d80ab4e7e578?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Coat">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic coat</label>
+            <label class="clothes__price"><b>$55</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <span class="discount-badge"><strong>15% OFF</strong></span>
+            <img
+              src="https://images.unsplash.com/photo-1492447273231-0f8fecec1e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+              alt="Coat">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic coat</label>
+            <label class="clothes__price"><b>$55</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1608751106912-4243fb25160f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+              alt="Coat">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic coat</label>
+            <label class="clothes__price"><b>$55</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1611842684445-c5717c20bd27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=676&q=80"
+              alt="Coat">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic coat</label>
+            <label class="clothes__price"><b>$55</b></label>
+          </div>
+        </article>
+
+        <article class="cloth col-lg-4 col-md-6 col-sm-12">
+          <div class="img__container">
+            <i class="uil uil-heart heart img__heart-icon"></i>
+            <i class="uil uil-shopping-bag bag img__bag-icon"></i>
+            <img
+              src="https://images.unsplash.com/photo-1579348477051-ca69f918bea2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
+              alt="Coat">
+          </div>
+          <div class="labels__container d-flex justify-content-between">
+            <label class="clothes__name">Basic coat</label>
+            <label class="clothes__price"><b>$55</b></label>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__bg container">
+      <div class="footer__container row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h1 class="footer__title">Vessel</h1>
+          <span class="footer__subtitle">Style that you need to try </span>
+        </div>
+
+        <ul class="footer__links d-flex flex-column gap-3 col-lg-4 col-md-6 col-sm-12">
+          <li>
+            <a href="#tshirts" class="footer__link">T-shirts</a>
+          </li>
+          <li>
+            <a href="#pants" class="footer__link">Pants</a>
+          </li>
+          <li>
+            <a href="#shorts" class="footer__link">Shorts</a>
+          </li>
+          <li>
+            <a href="#coats" class="footer__link">Coats</a>
+          </li>
+        </ul>
+
+        <div class="footer__socials col-lg-4 col-md-6 col-sm-12">
+          <a href="https://www.facebook.com/alisongustavo.lima" target="_blank" class="footer__social">
+            <i class="uil uil-facebook-f"></i>
+          </a>
+
+          <a href="https://www.instagram.com/alisonglima/" target="_blank" class="footer__social">
+            <i class="uil uil-instagram"></i>
+          </a>
+
+          <a href="https://twitter.com/alisonglima" target="_blank" class="footer__social">
+            <i class="uil uil-twitter-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer__copy">Copyright &#169; 2021</p>
+    </div>
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <!--==================== MAIN JS ====================-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
