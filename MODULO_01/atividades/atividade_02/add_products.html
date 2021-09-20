@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!--==================== BOOTSTRAP ====================-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Atividade 2 | Vessel</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header container" id="header">
+    <nav class="nav d-flex flex-row align-items-center justify-content-between">
+      <a href="index.html" class="nav__logo d-none d-sm-block">Vessel</a>
+
+      <i class="uil uil-bars nav__open d-md-none order-first" id="nav-open"></i>
+
+
+      <div class="nav__btns">
+        <i class="uil uil-search nav__icons" title="Search products" id="search-button"></i>
+        <i class="uil uil-plus nav__icons" title="Add a new product" id="add-button"></i>
+        <i class="uil uil-moon nav__icons" title="Turn on/off dark mode" id="theme-button"></i>
+        <i class="uil uil-heart heart nav__icons" title="Favorite products"></i>
+        <i class="uil uil-shopping-bag bag nav__icons" title="Your shopping bag"></i>
+        <i class="uil uil-user user nav__icons" title="Your profile"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form__container section container" id="add-product">
+      <div class="title__container d-flex flex-column align-items-start">
+        <h2 class="section__title">Add a new product</h2>
+        <span class="section__subtitle">Fill in all fields, please!</span>
+      </div>
+
+      <div>
+        <form action="https://formsubmit.co/alisonlima2@hotmail.com" method="POST" class="new-product__form row gap-4">
+          <div class="new-product__inputs row g-4 justify-content-between">
+            <div class="new-product__content col-lg-7 col-md-7 col-sm-12">
+              <label for="" class="new-product__label">Name</label>
+              <input type="text" name="name" class="new-product__input" required>
+            </div>
+            <div class="new-product__content col-lg-4 col-md-4 col-sm-12">
+              <label for="" class="new-product__label">Price</label>
+              <input type="number" name="price" class="new-product__input" required>
+            </div>
+          </div>
+
+          <div class="new-product__content col-lg-12 col-md-12 col-sm-12">
+            <label for="" class="new-product__label">Image</label>
+            <input type="file" name="image" class="new-product__input" required>
+          </div>
+          <div class="new-product__content col-lg-12 col-md-12 col-sm-12">
+            <label for="" class="new-product__label">Description</label>
+            <textarea name="description" id="" cols="0" rows="7" class="new-product__input" required></textarea>
+          </div>
+
+          <div class="button__container">
+            <a href="index.html" class="button button--flex">
+              Create product
+              <i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__bg container">
+      <div class="footer__container row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h1 class="footer__title">Vessel</h1>
+          <span class="footer__subtitle">Style that you need to try </span>
+        </div>
+
+        <div class="footer__socials col-lg-4 col-md-6 col-sm-12">
+          <a href="https://www.facebook.com/alisongustavo.lima" target="_blank" class="footer__social">
+            <i class="uil uil-facebook-f"></i>
+          </a>
+
+          <a href="https://www.instagram.com/alisonglima/" target="_blank" class="footer__social">
+            <i class="uil uil-instagram"></i>
+          </a>
+
+          <a href="https://twitter.com/alisonglima" target="_blank" class="footer__social">
+            <i class="uil uil-twitter-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer__copy">Copyright &#169; 2021</p>
+    </div>
+  </footer>
+
+  <!--==================== MAIN JS ====================-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

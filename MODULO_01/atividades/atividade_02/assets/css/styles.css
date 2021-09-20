@@ -11,6 +11,7 @@
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --first-color-dark: hsl(var(--hue-color), 28%, 12%);
   --first-color-darker: hsl(var(--hue-color), 30%, 8%);
@@ -25,6 +26,7 @@
   --title-color: var(--first-color-darker);
   --text-color: var(--color-grey);
   --text-color-light: var(--color-grey-lighter);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: var(--color-white-darker);
   --body-color-alt: var(--first-color-dark);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
@@ -86,24 +88,12 @@ body.dark-theme {
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --body-color: var(--first-color-dark);
   --body-color-alt: var(--color-white-darker);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
   --scroll-icon-color: hsl(var(--hue-color), 30%, 8%);
 
   --first-color-darker-alpha: 255, 255, 255;
-}
-
-/*========== Button Dark/Light ==========*/
-.nav__icons {
-  font-size: 1.25rem;
-  color: var(--title-color);
-  margin-right: var(--mb-0-25);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.nav__icons:hover {
-  color: var(--first-color);
 }
 
 /*==================== BASE ====================*/
@@ -170,6 +160,7 @@ main {
 
 .section__subtitle {
   display: block;
+  color: var(--text-color);
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
 }
@@ -180,6 +171,19 @@ main {
 }
 
 /*==================== NAV ====================*/
+
+/*========== Button Dark/Light ==========*/
+.nav__icons {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-0-25);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav__icons:hover {
+  color: var(--first-color);
+}
 
 .nav {
   width: 100%;
@@ -256,6 +260,32 @@ main {
 .active-link {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+}
+
+/*==================== BUTTONS ====================*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
 }
 
 /*==================== CONTENT ====================*/
@@ -345,6 +375,46 @@ main {
   padding: 0 5px;
   color: hsl(var(--hue-color), 8%, 95%);
   box-shadow: 4px -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.form__container {
+  padding: 8rem 0;
+  max-width: 460px !important;
+}
+
+.new-product__form {
+  width: 100%;
+}
+
+.new-product__content {
+  background-color: var(--input-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.new-product__label {
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+.new-product__inputs,
+.button__container {
+  padding: 0 !important;
+}
+
+.new-product__input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+.row {
+  margin-left: 0 !important;
 }
 
 /*==================== FOOTER ====================*/

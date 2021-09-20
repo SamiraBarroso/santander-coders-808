@@ -23,7 +23,7 @@
   <!--==================== HEADER ====================-->
   <header class="header container" id="header">
     <nav class="nav d-flex flex-row align-items-center justify-content-between">
-      <a href="#" class="nav__logo">Vessel</a>
+      <a href="#" class="nav__logo d-none d-sm-block">Vessel</a>
 
       <i class="uil uil-bars nav__open d-md-none order-first" id="nav-open"></i>
 
@@ -57,11 +57,12 @@
       </div>
 
       <div class="nav__btns">
-        <i class="uil uil-search nav__icons" id="search-button"></i>
-        <i class="uil uil-moon nav__icons" id="theme-button"></i>
-        <i class="uil uil-heart heart nav__icons"></i>
-        <i class="uil uil-shopping-bag bag nav__icons"></i>
-        <i class="uil uil-user user nav__icons"></i>
+        <i class="uil uil-search nav__icons" title="Search products" id="search-button"></i>
+        <a class="uil uil-plus nav__icons" title="Add a new product" href="add_products.html"></a>
+        <i class="uil uil-moon nav__icons" title="Turn on/off dark mode" id="theme-button"></i>
+        <i class="uil uil-heart heart nav__icons" title="Favorite products"></i>
+        <i class="uil uil-shopping-bag bag nav__icons" title="Your shopping bag"></i>
+        <i class="uil uil-user user nav__icons" title="Your profile"></i>
       </div>
     </nav>
   </header>
