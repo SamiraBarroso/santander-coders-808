@@ -10,11 +10,16 @@
 | :heavy_check_mark: | [04](aulas/aula_04) | 08/09/21 | Formulários e CSS       |
 | :heavy_check_mark: | [05](aulas/aula_05) | 10/09/21 | Posicionamento          |
 | :heavy_check_mark: | [06](aulas/aula_06) | 10/09/21 | Flexbox                 |
+| :heavy_check_mark: | [07](aulas/aula_07) | 13/09/21 | Bootstrap               |
+| :heavy_check_mark: | 08                  | 15/09/21 | Aula livre              |
+| :heavy_check_mark: | [09](aulas/aula_09) | 17/09/21 | Introdução Javascript   |
+| :heavy_check_mark: | [10](aulas/aula_10) | 20/09/21 | Condicionais            |
 
-:clock3: 15h
+:clock3: 27h
 
 ## :pencil: Atividades
 
 |                    | Aula                          | Data     | Conteúdo         |
 | ------------------ | ----------------------------- | -------- | ---------------- |
 | :heavy_check_mark: | [01](atividades/atividade_01) | 13/09/21 | Catálogo digital |
+| :heavy_check_mark: | [02](atividades/atividade_02) | 20/09/21 | Catálogo digital |
