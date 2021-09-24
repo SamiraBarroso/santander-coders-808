@@ -3,4 +3,5 @@
 Códigos desenvolvidos durante o curso de **Desenvolvimento Web Full Stack** ministrado pela **Let's Code**.
 
 ## :orange_book: Módulos
-- #### [Módulo 1: Web Front-End Estática](/MODULO_01)
+- **[Módulo 1: Web Front-End Estática](/MODULO_01)**
+- **[Módulo 2: Lógica de Programação e Estrutura de Dados](/MODULO_02)**
