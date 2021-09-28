@@ -17,5 +17,5 @@ EXTRA (200XP)
 - Ter algum respaldo visual da forca (não precisa ser no DOM, pode ser no alert, mas se quiserem fazer no DOM fiquem à vontade);
 - As palavras possíveis da forca devem vir de alguma API externa ou um arquivo TXT contendo a lista de palavras(se sentirem dúvida, podem me procurar).
 
-<!-- ## :computer: Deploy
-- [Vessel app](https://santander-coders-808.vercel.app/) -->
+## :computer: Deploy
+- [Hangman 808](https://hangman-808.vercel.app/)
