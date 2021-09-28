@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Atividade 3 | Jogo da forca</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="#" class="nav__logo">Jogo da forca</a>
+      <i class="uil uil-moon nav__icons" id="theme-button"></i>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hangman__container">
+      <div class="top__container">
+        <div class="title__container">
+          <h1>Jogo da forca</h1>
+          <span>Tente descobrir qual é a palavra abaixo.</span>
+        </div>
+
+        <div class="buttons__container">
+          <button class="button button--flex" id="start-button">
+            Começar
+            <i class="uil uil-play button__icon"></i>
+          </button>
+
+          <button class="button button--flex" id="next-button">
+            Próxima
+            <i class="uil uil-arrow-right button__icon"></i>
+          </button>
+
+          <button class="button button--flex" id="restart-button">
+            Reiniciar
+            <i class="uil uil-redo button__icon"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="gallows__container">
+        <h2 id="lives"></h2>
+        <div class="gallows__parts one"></div>
+        <div class="gallows__parts two"></div>
+        <div class="gallows__parts three">
+          <div class="gallows__parts four"></div>
+          <div class="dummy__container">
+            <div class="dummy__parts head" id="p-0">
+              <div class="dummy__parts body" id="p-1">
+                <div class="dummy__parts left__arm" id="p-2"></div>
+                <div class="dummy__parts right__arm" id="p-3"></div>
+
+                <div class="dummy__parts left__leg" id="p-4"></div>
+                <div class="dummy__parts right__leg" id="p-5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="title__container">
+        <div class="word__container" id="word"></div>
+        <span id="tip"></span>
+      </div>
+
+      <div class="wrong__letters" id="wrong-letters"></div>
+    </div>
+  </main>
+
+
+  <!--==================== MAIN JS ====================-->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
