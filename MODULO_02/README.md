@@ -6,8 +6,8 @@
 | ------------------ | ---------------------- | -------- | ----------------------------|
 | :heavy_check_mark: | [08](aulas/aula_08)    | 17/09/21 | Javacript (Parte 1)	        |
 | :heavy_check_mark: | [09](aulas/aula_09)    | 20/09/21 | Javacript (Parte 2)         |
-| :heavy_check_mark: | [10](aulas/aula_10-01) | 22/09/21 | Javacript (Parte 3)         |
-| :heavy_check_mark: | [10](aulas/aula_10-02) | 22/09/21 | Javacript (Parte 4)         |
+| :heavy_check_mark: | [10-01](aulas/aula_10-01) | 22/09/21 | Javacript (Parte 3)         |
+| :heavy_check_mark: | [10-02](aulas/aula_10-02) | 22/09/21 | Javacript (Parte 4)         |
 | :heavy_check_mark: | [11](aulas/aula_11)    | 24/09/21 | Javacript (Parte 5)         |
 | :heavy_check_mark: | 12                     | 27/09/21 | Happy Hour Santander Coders |
 | :heavy_check_mark: | [13](aulas/aula_13)    | 29/09/21 | Javacript (Parte 6)         |
