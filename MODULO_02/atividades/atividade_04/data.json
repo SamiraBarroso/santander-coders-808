@@ -1,0 +1,155 @@
+[{
+  "id": 1,
+  "name": "T-shirts",
+  "normalized": "tshirts",
+  "description": "Basic t-shirts to you",
+  "products": [{
+    "id": 1,
+    "name": "Basic t-shirt",
+    "price": 35,
+    "image": "https://images.unsplash.com/photo-1613852348851-df1739db8201?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 2,
+    "name": "Basic t-shirt",
+    "price": 35,
+    "image": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 3,
+    "name": "Basic t-shirt",
+    "price": 35,
+    "image": "https://images.unsplash.com/photo-1608202602184-17c1daa0dd63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=629&q=80",
+    "discount": 15
+  }, {
+    "id": 4,
+    "name": "Basic t-shirt",
+    "price": 35,
+    "image": "https://images.unsplash.com/photo-1554568218-0f1715e72254?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 5,
+    "name": "Basic t-shirt",
+    "price": 35,
+    "image": "https://images.unsplash.com/photo-1551799517-eb8f03cb5e6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
+    "discount": 45
+  }, {
+    "id": 6,
+    "name": "Basic t-shirt",
+    "price": 35,
+    "image": "https://images.unsplash.com/photo-1519330377309-9ee1c6783348?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }]
+}, {
+  "id": 2,
+  "name": "Pants",
+  "normalized": "pants",
+  "description": "Basic pants to you",
+  "products": [{
+    "id": 1,
+    "name": "Basic pant",
+    "price": 50,
+    "discount": 25,
+    "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBhbnRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  }, {
+    "id": 2,
+    "name": "Basic pant",
+    "price": 50,
+    "image": "https://images.unsplash.com/photo-1555689502-c4b22d76c56f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGFudHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  }, {
+    "id": 3,
+    "name": "Basic pant",
+    "price": 50,
+    "image": "https://images.unsplash.com/photo-1584865288642-42078afe6942?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGFudHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  }, {
+    "id": 4,
+    "name": "Basic pant",
+    "price": 50,
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFudHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  }, {
+    "id": 5,
+    "name": "Basic pant",
+    "price": 50,
+    "image": "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBhbnRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  }, {
+    "id": 6,
+    "name": "Basic pant",
+    "price": 50,
+    "discount": 15,
+    "image": "https://images.unsplash.com/photo-1570653321586-3bb42aaee967?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHBhbnRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  }]
+}, {
+  "id": 3,
+  "name": "Shorts",
+  "normalized": "shorts",
+  "description": "Basic shorts to you",
+  "products": [{
+    "id": 1,
+    "name": "Basic short",
+    "price": 40,
+    "image": "https://images.unsplash.com/photo-1563643021-fc79b9e02867?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 2,
+    "name": "Basic short",
+    "price": 40,
+    "image": "https://images.unsplash.com/photo-1593263049629-a6bbe863049f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 3,
+    "name": "Basic short",
+    "price": 40,
+    "image": "https://images.unsplash.com/photo-1602132664379-dd392de2854e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 4,
+    "name": "Basic short",
+    "price": 40,
+    "discount": 15,
+    "image": "https://images.unsplash.com/photo-1600884445699-85e50f61f8be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 5,
+    "name": "Basic short",
+    "price": 40,
+    "discount": 25,
+    "image": "https://images.unsplash.com/photo-1616188419493-c50b2a825972?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 6,
+    "name": "Basic short",
+    "price": 40,
+    "discount": 35,
+    "image": "https://images.unsplash.com/photo-1592943682801-647fe0a79151?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }]
+}, {
+  "id": 4,
+  "name": "Coats",
+  "normalized": "coats",
+  "description": "Basic coats to you",
+  "products": [{
+    "id": 1,
+    "name": "Basic coat",
+    "price": 55,
+    "discount": 35,
+    "image": "https://images.unsplash.com/photo-1602443276032-3dfd0f669041?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=641&q=80"
+  }, {
+    "id": 2,
+    "name": "Basic coat",
+    "price": 55,
+    "discount": 25,
+    "image": "https://images.unsplash.com/photo-1554526735-d80ab4e7e578?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 3,
+    "name": "Basic coat",
+    "price": 55,
+    "discount": 15,
+    "image": "https://images.unsplash.com/photo-1492447273231-0f8fecec1e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 4,
+    "name": "Basic coat",
+    "price": 55,
+    "image": "https://images.unsplash.com/photo-1608751106912-4243fb25160f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+  }, {
+    "id": 5,
+    "name": "Basic coat",
+    "price": 55,
+    "image": "https://images.unsplash.com/photo-1611842684445-c5717c20bd27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=676&q=80"
+  }, {
+    "id": 6,
+    "name": "Basic coat",
+    "price": 55,
+    "image": "https://images.unsplash.com/photo-1579348477051-ca69f918bea2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
+  }]
+}]
