@@ -21,5 +21,5 @@
 
 |                    | Atividade                     | Data     | Conteúdo         |
 | ------------------ | ----------------------------- | -------- | ---------------- |
-| :heavy_check_mark: | [03](atividades/atividade_03) | 27/09/21 | Catálogo digital |
+| :heavy_check_mark: | [03](atividades/atividade_03) | 27/09/21 | Jogo da forca    |
 | :heavy_check_mark: | [04](atividades/atividade_04) | 11/10/21 | Catálogo digital |
