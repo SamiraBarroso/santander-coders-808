@@ -12,8 +12,8 @@
 | :heavy_check_mark: | 12                        | 27/09/21 | Happy Hour Santander Coders |
 | :heavy_check_mark: | [13](aulas/aula_13)       | 29/09/21 | Javacript (Parte 6)         |
 | :heavy_check_mark: | [14](aulas/aula_14)       | 01/10/21 | Javacript (Parte 7)         |
-| :heavy_check_mark: | 15                        | 04/10/21 | Aula livre/atividade        |
-| :heavy_check_mark: | 16                        | 06/10/21 | Aula livre/atividade        |
+| :heavy_check_mark: | 15                        | 04/10/21 | Aula livre/Atividade 04     |
+| :heavy_check_mark: | 16                        | 06/10/21 | Aula livre/Atividade 04     |
 
 :clock3: 27h
 
