@@ -1,7 +1,8 @@
 import changeTheme from "./utils/changeTheme.js";
-import cloths from "./cloths.js";
+import saveDataOnLocalStorage from "./utils/saveDataOnLocalStorage.js";
+import clothes from "./clothes.js";
 
-document.addEventListener("DOMContentLoaded", cloths);
+document.addEventListener("DOMContentLoaded", clothes);
 
 /*==================== MENU SHOW AND HIDDEN ====================*/
 const navMenu = document.querySelector("#nav-menu"),
@@ -90,3 +91,16 @@ const themeButton = document.querySelector("#theme-button");
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener("click", changeTheme);
+
+/*==================== FILTER ITEMS ====================*/
+
+const searchInput = document.querySelector("#search-input");
+
+searchInput.addEventListener("keyup", function (e) {
+  let key = e.which || e.keyCode;
+  if (key === 13) {
+    clothes(e, e.target.value);
+  }
+});
+
+saveDataOnLocalStorage();
