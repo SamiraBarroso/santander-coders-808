@@ -1,4 +1,4 @@
-# Módulo 1: Web Front-End Estática
+# Módulo 2: Lógica de Programação e Estrutura de Dados
 
 ## :blue_book: Aulas
 
