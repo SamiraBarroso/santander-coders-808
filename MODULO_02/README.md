@@ -3,7 +3,7 @@
 ## :blue_book: Aulas
 
 |                    | Aula                      | Data     | Conteúdo                    |
-| ------------------ | --------------------------| -------- | ----------------------------|
+| ------------------ | ------------------------- | -------- | --------------------------- |
 | :heavy_check_mark: | [08](aulas/aula_08)       | 17/09/21 | Javacript (Parte 1)         |
 | :heavy_check_mark: | [09](aulas/aula_09)       | 20/09/21 | Javacript (Parte 2)         |
 | :heavy_check_mark: | [10-01](aulas/aula_10-01) | 22/09/21 | Javacript (Parte 3)         |
@@ -14,8 +14,9 @@
 | :heavy_check_mark: | [14](aulas/aula_14)       | 01/10/21 | Javacript (Parte 7)         |
 | :heavy_check_mark: | 15                        | 04/10/21 | Aula livre/Atividade 04     |
 | :heavy_check_mark: | 16                        | 06/10/21 | Aula livre/Atividade 04     |
+| :heavy_check_mark: | 17                        | 08/10/21 | Aula livre/Atividade 04     |
 
-:clock3: 27h
+:clock3: 30h
 
 ## :pencil: Atividades
 

@@ -23,7 +23,7 @@
     // }
     // console.log(numeros);
 
-    numeros = numeros.map(num => num*2);
+    numeros = numeros.map(num => num * 2);
     console.log(numeros);
 
     const valores = [9.56, 10.0, 25.90, 12.35];
@@ -42,13 +42,13 @@
     //// REDUCE
 
     let soma = 0;
-    for (let i=0; i<numeros.length; i++) {
+    for (let i = 0; i < numeros.length; i++) {
         console.log(soma);
         soma = soma + numeros[i];
     }
     console.log(soma);
 
-    console.log(numeros.reduce((soma, num) => { 
+    console.log(numeros.reduce((soma, num) => {
         console.log(soma);
         return soma + num;
     }, 0));
@@ -60,6 +60,20 @@
         return arr;
     }, []));
     console.log(numeros);
+
+    const person = {
+        fullName: function () {
+            return this.firstName + " " + this.lastName;
+        }
+    }
+
+    const person1 = {
+        firstName: "Mary",
+        lastName: "Doe"
+    }
+
+    // This will return "Mary Doe":
+    console.log(person.fullName.apply(person1));
 </script>
 
 </html>

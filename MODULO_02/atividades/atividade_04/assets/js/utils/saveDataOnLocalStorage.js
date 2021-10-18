@@ -1,7 +1,7 @@
 async function setData() {
-  const data = await fetch("../../data.json").then((response) => response.json());
+  const data = await fetch("../../products.json").then((response) => response.json());
 
-  localStorage.setItem("clothes", JSON.stringify(data));
+  localStorage.setItem("products", JSON.stringify(data));
 }
 
 export default setData;
