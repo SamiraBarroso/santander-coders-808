@@ -11,5 +11,5 @@
 
 ## :pencil: Atividades
 
-|     | Atividade | Data | Conteúdo |
-| --- | --------- | ---- | -------- |
+<!-- |     | Atividade | Data | Conteúdo |
+| --- | --------- | ---- | -------- | -->
