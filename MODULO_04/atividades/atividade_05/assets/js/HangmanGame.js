@@ -21,6 +21,9 @@ class HangmanGame {
   }
 
   execute(input) {
+    // Flag para habilitar o jogo ser reiniciado
+    localStorage.setItem("restart", true);
+
     // Deixando a letra em caixa alta para facilitar a comparação
     input = input.toUpperCase();
 
@@ -49,6 +52,7 @@ class HangmanGame {
       wrongLetters.appendChild(child);
     });
 
+    // Adiciona o estado do jogo ao localStorage
     localStorage.setItem("game", JSON.stringify(this));
   }
 
@@ -95,19 +99,25 @@ class HangmanGame {
 
   // Função que exibe a mensagem de fim de jogo
   endGame(message, won) {
+    // Pausa o timer
     clearInterval(1);
+
+    // Remove o estado de jogo do localStorage
     localStorage.removeItem("game");
 
+    // Flag para desabilitar o jogo ser reiniciado
+    localStorage.setItem("restart", false);
+
+    // Se o jogador ganhou, verifica se ele bateu o recorde, caso sim, atualiza o recorde
     if (won) {
       const highScore = localStorage.getItem("highScore");
-
-      localStorage.removeItem("game");
 
       if (this.score < highScore || highScore === null) {
         localStorage.setItem("highScore", this.score);
       }
     }
 
+    // Exibe a mensagem de fim de jogo
     if (confirm(message)) {
       document.location.reload(true);
     } else {

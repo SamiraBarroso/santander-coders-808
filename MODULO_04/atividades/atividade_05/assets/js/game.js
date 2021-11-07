@@ -5,15 +5,19 @@ const wordContainer = document.querySelector("#word"),
   wrongLetters = document.querySelector("#wrong-letters"),
   livesText = document.querySelector("#lives");
 
-// Crie um elemento para cada letra da palavra, anexa ao wordContainer e mostra a dica e as vidas do jogador
+// Função responsável por "montar" o jogo
 function mountGame(gameData) {
   const tipText = document.querySelector("#tip"),
     currentTimeText = document.querySelector("#current-time"),
     highScoreText = document.querySelector("#high-score");
 
+  // Busca um jogo salvo no localStorage
   const gameRecovery = JSON.parse(localStorage.getItem("game"));
+  // Busca a flag de recuperação de jogo
+  const restart = JSON.parse(localStorage.getItem("restart"));
 
-  if (gameRecovery) {
+  // Se houver um jogo salvo e estiver disponível o reinício, recupera o jogo
+  if (gameRecovery && restart !== false) {
     if (confirm("Foi encontrado um jogo inacabado anteriormente deseja continuar?")) {
       const { word, wordNormalized, tip, inputtedWords, player, score } = gameRecovery;
 
@@ -29,17 +33,21 @@ function mountGame(gameData) {
       livesText.textContent = gameData.player.lives;
       currentTimeText.textContent = timeToString(gameData.score);
     } else {
+      // Se não, apaga o jogo salvo e inicia um novo jogo
       localStorage.removeItem("game");
       alert("Bora começar o game! Você terá apenas 6 vidas, tome cuidado!");
     }
   }
 
+  // Caso o jogo tenha sido recuperado, o timer continua a partir do tempo salvo, caso contrário, inicia do zero
   let elapsedTime = gameData.score || 0;
 
+  // Função responsável por atualizar o tempo no DOM
   function print(txt) {
     currentTimeText.innerHTML = "Current: " + txt;
   }
 
+  // Conjunto de instruções responsáveis por atualizar o tempo
   let startTime = Date.now() - elapsedTime;
   setInterval(function printTime() {
     elapsedTime = Date.now() - startTime;
@@ -48,14 +56,17 @@ function mountGame(gameData) {
     gameData.score = elapsedTime;
   }, 10);
 
+  // Busca o highscore salvo no localStorage
   const highScore = localStorage.getItem("highScore");
 
+  // Se existir um highscore, atualiza o DOM, caso contrário, inicia com zero
   if (highScore) {
     highScoreText.innerHTML = `High Score: ${timeToString(highScore)}`;
   } else {
     highScoreText.innerHTML = `High Score: 0`;
   }
 
+  // Laço responsável por montar o campo de letras com base no tamanho da palavra
   for (let i = 0; i < gameData.wordNormalized.length; i++) {
     let child = document.createElement("h1");
     child.innerText = "-";
@@ -65,6 +76,7 @@ function mountGame(gameData) {
     wordContainer.appendChild(child);
   }
 
+  // Laço responsável por revelar as letras da palavra que o jogador acertou
   gameData.inputtedWords.forEach((letter) => {
     if (gameData.wordNormalized.includes(letter)) {
       let indexes = [];
@@ -83,6 +95,7 @@ function mountGame(gameData) {
     }
   });
 
+  // Laço responsável por montar o campo de letras erradas
   const sortedWords = gameData.inputtedWords.sort();
 
   wrongLetters.innerHTML = "";
@@ -95,12 +108,15 @@ function mountGame(gameData) {
     wrongLetters.appendChild(child);
   });
 
+  // Exibe as dicas e a vida do jogador no DOM
   tipText.textContent = `Dica: ${gameData.tip}`;
   livesText.textContent = `Vidas: ${gameData.player.remainingGuesses}`;
 
+  // Exibe a resposta no console para fins de teste
   console.log("Professor aqui está a resposta! rsrs =>", gameData.word);
 }
 
+// Função responsável por iniciar e executar o jogo
 export default function hangman(word) {
   const restartButton = document.querySelector("#restart-button"),
     nextButton = document.querySelector("#next-button");
