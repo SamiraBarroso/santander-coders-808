@@ -14,5 +14,6 @@
 
 ## :pencil: Atividades
 
-<!-- |     | Atividade | Data | Conteúdo |
-| --- | --------- | ---- | -------- | -->
+|                    | Atividade                     | Data     | Conteúdo      |
+| ------------------ | ----------------------------- | -------- | ------------- |
+| :heavy_check_mark: | [05](atividades/atividade_05) | 08/11/21 | Jogo da forca |
