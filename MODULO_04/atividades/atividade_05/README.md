@@ -23,6 +23,6 @@ EXTRA (300XP)
 - LocalStorage deve ser usado para salvar o estado atual do jogo (se o jogador parar no meio e quiser voltar depois);
 - Ter um teclado virtual com as letras e funcionando de acordo.
 
-## :computer: Deploy
+<!-- ## :computer: Deploy
 
-- [Hangman 808](https://hangman-808.vercel.app/)
+- [Hangman 808](https://hangman-808.vercel.app/) -->
