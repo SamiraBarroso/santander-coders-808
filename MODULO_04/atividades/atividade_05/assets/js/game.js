@@ -17,7 +17,7 @@ function mountGame(gameData) {
   const restart = JSON.parse(localStorage.getItem("restart"));
 
   // Se houver um jogo salvo e estiver disponível o reinício, recupera o jogo
-  if (gameRecovery && restart !== false) {
+  if (gameRecovery && restart) {
     if (confirm("Foi encontrado um jogo inacabado anteriormente deseja continuar?")) {
       const { word, wordNormalized, tip, inputtedWords, player, score } = gameRecovery;
 
