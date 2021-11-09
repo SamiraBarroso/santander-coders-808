@@ -86,7 +86,7 @@ class HangmanGame {
 
       // Verificando se o jogador perdeu
       if (this.player.gameOver) {
-        this.endGame("GAMER OVER! A palavra era: " + this.word.word + "Deseja começar um novo jogo? 😔😔😔");
+        this.endGame("GAMER OVER! A palavra era: " + this.word + " Deseja começar um novo jogo? 😔😔😔");
       }
 
       // Adicionando a parte do boneco da forca ao DOM
@@ -94,6 +94,32 @@ class HangmanGame {
 
       //Atualiza a vida do jogador no DOM
       livesText.textContent = `Vidas: ${this.player.remainingGuesses}`;
+    }
+  }
+
+  checkWord(guessedWord) {
+
+    guessedWord = guessedWord.toUpperCase();
+
+    if (guessedWord == this.wordNormalized) {
+      this.endGame("PARABÉNS VOCÊ ACERTOU! Deseja começar um novo jogo? 👏🎉🥳", true);
+    }
+    else {
+      // Adiciona os erros do jogador
+      this.player.mistake();
+
+      // Verificando se o jogador perdeu
+      if (this.player.gameOver) {
+        this.endGame("GAMER OVER! A palavra era: " + this.word
+          + " Deseja começar um novo jogo? 😔😔😔");
+      }
+
+      // Adicionando a parte do boneco da forca ao DOM
+      document.querySelector(`#p-${5 - this.player.remainingGuesses}`).style.display = "block";
+
+      //Atualiza a vida do jogador no DOM
+      livesText.textContent = `Vidas: ${this.player.remainingGuesses}`;
+
     }
   }
 
