@@ -119,7 +119,8 @@ function mountGame(gameData) {
 // Função responsável por iniciar e executar o jogo
 export default function hangman(word) {
   const restartButton = document.querySelector("#restart-button"),
-    nextButton = document.querySelector("#next-button");
+    nextButton = document.querySelector("#next-button"),
+    guessButton = document.querySelector("#guess-button");
 
   // Instancia o objeto HangmanGame
   const gameData = new HangmanGame(word);
@@ -140,6 +141,21 @@ export default function hangman(word) {
     }
 
     gameData.execute(input);
+  });
+
+  guessButton.addEventListener("click", () => {
+    let wordInput = document.querySelector("#word-input");
+
+    if (wordInput.value == " " || wordInput.value == "" ||
+      wordInput.value == null || wordInput.value == undefined)
+      alert("Você precisa digitar uma palavra!");
+    if (wordInput.value.match(/[0-9]/))
+      alert("Você precisa digitar uma palavra sem caracteres especiais!");
+    else
+      gameData.checkWord(wordInput.value);
+
+
+    document.getElementById("word-input").value = "";
   });
 
   // Reinicia o jogo

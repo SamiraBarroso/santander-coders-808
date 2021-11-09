@@ -388,6 +388,17 @@ td {
   text-decoration: line-through;
 }
 
+.input-class {
+  padding: 5px;
+  width: 150px;
+  border: 1px solid #6db5f1;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  margin: 10px auto;
+  display: block;
+}
+
+
 /*==================== MEDIA QUERIES ====================*/
 
 @media screen and (max-width: 450px) {
