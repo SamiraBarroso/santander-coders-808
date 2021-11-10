@@ -1,5 +1,6 @@
 import HangmanGame from "./HangmanGame.js";
 import timeToString from "./utils/timeToString.js";
+import keyboardVirtual from "./utils/keyboard.js";
 
 const wordContainer = document.querySelector("#word"),
   wrongLetters = document.querySelector("#wrong-letters"),
@@ -15,6 +16,9 @@ function mountGame(gameData) {
   const gameRecovery = JSON.parse(localStorage.getItem("game"));
   // Busca a flag de recuperação de jogo
   const restart = JSON.parse(localStorage.getItem("restart"));
+
+  //Ativa o teclado virtual
+  keyboardVirtual();
 
   // Se houver um jogo salvo e estiver disponível o reinício, recupera o jogo
   if (gameRecovery && restart) {

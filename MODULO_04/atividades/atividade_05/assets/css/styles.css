@@ -438,3 +438,39 @@ td {
     padding: 0;
   }
 }
+
+
+
+#letters {
+  margin: 15px auto;
+  padding: 0;
+  max-width: 900px;
+}
+#letters li {
+  float: left;
+  margin: 0 10px 10px 0;
+  list-style: none;
+  width: 40px;
+  height: 35px;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 5px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 1px #007bff;
+}
+#letters li:last-child {
+  width: 90px;
+}
+#letters li:hover {
+  background: #fff;
+  border: solid 1px #007bff;
+  color: #007bff;
+}
+#letters .ativo {
+  background: #fff;
+  border: solid 1px #007bff;
+  color: #007bff;
+}
