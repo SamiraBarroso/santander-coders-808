@@ -398,7 +398,6 @@ td {
   display: block;
 }
 
-
 /*==================== MEDIA QUERIES ====================*/
 
 @media screen and (max-width: 450px) {
@@ -438,8 +437,6 @@ td {
     padding: 0;
   }
 }
-
-
 
 #letters {
   margin: 15px auto;

@@ -36,6 +36,10 @@ function mountGame(gameData) {
       tipText.textContent = gameData.tip;
       livesText.textContent = gameData.player.lives;
       currentTimeText.textContent = timeToString(gameData.score);
+
+      for (let i = 0; i <= 5 - gameData.player.lives; i++) {
+        document.querySelector(`#p-${i}`).style.display = "block";
+      }
     } else {
       // Se não, apaga o jogo salvo e inicia um novo jogo
       localStorage.removeItem("game");
@@ -150,14 +154,10 @@ export default function hangman(word) {
   guessButton.addEventListener("click", () => {
     let wordInput = document.querySelector("#word-input");
 
-    if (wordInput.value == " " || wordInput.value == "" ||
-      wordInput.value == null || wordInput.value == undefined)
+    if (wordInput.value == " " || wordInput.value == "" || wordInput.value == null || wordInput.value == undefined)
       alert("Você precisa digitar uma palavra!");
-    if (wordInput.value.match(/[0-9]/))
-      alert("Você precisa digitar uma palavra sem caracteres especiais!");
-    else
-      gameData.checkWord(wordInput.value);
-
+    if (wordInput.value.match(/[0-9]/)) alert("Você precisa digitar uma palavra sem caracteres especiais!");
+    else gameData.checkWord(wordInput.value);
 
     document.getElementById("word-input").value = "";
   });

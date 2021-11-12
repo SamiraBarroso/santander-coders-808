@@ -1,28 +1,29 @@
-function apiCaller(url) {
-  const req = new XMLHttpRequest();
+async function apiCaller(url) {
+  const req = await fetch(url);
 
-  req.open("GET", url, false);
-  req.send();
+  if (req.status === 200) {
+    const data = await req.text();
 
-  return req.responseText;
+    return data;
+  }
 }
 
-function getRandomWord() {
-  const word = apiCaller("https://api.dicionario-aberto.net/random");
+async function getRandomWord() {
+  const word = await apiCaller("https://api.dicionario-aberto.net/random");
 
   return JSON.parse(word).word.length <= 10 ? JSON.parse(word).word : getRandomWord();
 }
 
-function getFullWordData(word) {
-  const getFullWordData = apiCaller(`https://api.dicionario-aberto.net/word/${word}`);
+async function getFullWordData(word) {
+  const getFullWordData = await apiCaller(`https://api.dicionario-aberto.net/word/${word}`);
 
   return JSON.parse(getFullWordData)[0];
 }
 
-export default function createWordObject() {
-  let word = getRandomWord();
+export default async function createWordObject() {
+  let word = await getRandomWord();
 
-  const wordWithData = getFullWordData(word);
+  const wordWithData = await getFullWordData(word);
 
   const removeLineBreaksFromWordDefinition = wordWithData.xml.replace(/(\r\n|\n|\r)/gm, "");
 
