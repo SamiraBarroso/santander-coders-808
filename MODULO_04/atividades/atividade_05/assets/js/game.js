@@ -17,9 +17,6 @@ function mountGame(gameData) {
   // Busca a flag de recuperação de jogo
   const restart = JSON.parse(localStorage.getItem("restart"));
 
-  //Ativa o teclado virtual
-  keyboardVirtual();
-
   // Se houver um jogo salvo e estiver disponível o reinício, recupera o jogo
   if (gameRecovery && restart) {
     if (confirm("Foi encontrado um jogo inacabado anteriormente deseja continuar?")) {
